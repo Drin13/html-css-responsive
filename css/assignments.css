@@ -1,0 +1,140 @@
+header {
+    /* background-image: url(../images/pexels-junior-teixeira-2047905.jpg); */
+    background-image: url(../images/assignments.jpg);
+    width: 100%;
+    height: 100vh;
+}
+
+/* header h2 {
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    font-size: 3rem;
+} */
+
+#assignments {
+    display: flex;
+}
+
+.assignments {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0% 0% 5%;
+    width: 100%;
+}
+
+.assignments a {
+    width: 20%;
+    margin: 1%;
+    padding: 5%;
+    text-align: center;
+    border-radius: 5%;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 1px 1px 5px #333333;
+}
+
+.assignments a:hover {
+    background-color: #e55512;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* #openAssignments {
+    margin: 3%;
+    cursor: pointer;
+} */
+
+.bg-color-container {
+    background-color: #fafafa;
+    padding: 1%;
+}
+
+.my-assignments, .my-projects { 
+    margin: 10% 0% 3% 0%;
+    font-size: 25px;
+}
+
+.my-projects {
+    margin-top: 5%;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    margin-top: 5%;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+    height: auto;
+    border: 1px solid white;
+    margin: auto;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.sidebar-bottom {
+    display: none;
+}
+@media screen and (max-width: 1600px) {
+
+    .assignments a {
+        width: 23%; 
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .assignments a {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .assignments a {
+        width:95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-bottom {
+        display: block;
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin:auto;
+        margin-bottom: 20px;
+        border: 1px solid white;
+        background: white;
+        border: 1px solid  #3333;
+        padding: 10px;
+        margin-top: 1em;
+    }
+
+}

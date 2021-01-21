@@ -1,0 +1,216 @@
+header {
+    background-image: url(../images/hobbies.jpg);
+    filter: grayscale(65%);
+}
+
+.programming, .gaming, .nature, .traveling {
+    display: flex;
+    width: 70%;
+    margin:10% auto 5% auto;
+    background-color: #f5f5f5;
+}
+
+.programming > div, .gaming > div, .nature > div {
+    width: 50%;
+    padding: 2em 2em;
+}
+
+.programming h2 , .gaming h2 , .nature h2, .traveling h2     {
+    color: #e55512;
+}
+
+.photo-with-border, .photo-with-border-traveling {
+    position: relative;
+    width: 30%!important;
+    height: 300px;
+}
+
+.photo-with-border-traveling {
+    margin: 1em auto;
+}
+
+.photo-with-border > *, .mixed > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+  
+.rotatedBorder, .rotatedBorderNature {
+    border: 15px #e55512 solid;
+    transform: rotate(45deg);
+    box-shadow: 0 0 3px #e55512, inset 0 0 3px #e55512;
+}
+
+.rotatedBorderNature {
+    border: 15px #e55512 solid;
+    transform: rotate(0deg);
+}
+  
+.grid {
+    display: grid;
+     grid: repeat(2, 1fr) / repeat(2, 1fr);
+}
+  
+[data-white]{
+    background-color: white;
+}
+  
+.mixed {
+    mix-blend-mode: multiply;
+}
+  
+.photo-with-border img {
+    object-fit: cover;
+}
+  
+.photo-with-border > img {
+      box-shadow: 0 0 20px #bac3c3;
+}
+
+.gaming {
+    width: 70%;
+    float: right;
+    margin-bottom: 15%!important;
+}
+
+.nature {
+    width: 80%;
+}
+
+.gaming .hobby-gaming, .nature .hobby-nature{
+    padding-left:6em;
+    width: 60%;
+}
+
+.programming .hobby-programming {
+    padding-right: 3em;
+    width: 60%;
+}
+
+.traveling {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:10% auto 5% auto;
+    width: 100%;
+}
+.traveling img {
+    border: 3px solid #e55512;
+    box-shadow: 0 0 3px #e55512, inset 0 0 3px #e55512;
+}
+
+.align-photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hobby-traveling{
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    width: 70%;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .programming, .gaming, .nature, .traveling {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .programming, .gaming, .nature, .traveling {
+        width: 90%;
+    }
+} 
+
+@media screen and (max-width: 1400px) {
+    .programming, .gaming, .nature, .traveling {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .programming, .gaming, .nature {
+    display: block;
+    }
+
+    .programming .hobby-programming, .gaming .hobby-gaming, .nature .hobby-nature {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .programming > .photo-with-border, .gaming > .photo-with-border, .nature > .photo-with-border {
+        width: 50%!important;
+        padding: 2em 2em;
+    }
+
+    .photo-with-border {
+        margin: auto;
+    }
+    .rotatedBorder, .rotatedBorderNature {
+        padding:10.4em;
+    }
+    [data-white]{
+        background-color: transparent;
+    }
+    .photo-with-border img {
+        filter: brightness(120%);
+        width: 100%;
+        height: 120%;
+    }
+
+    /* .photo-with-border {
+        float: left;
+    } */
+
+    .hobby-programming, .hobby-gaming, .hobby-nature {
+        text-align: center;
+        margin-top: 8em;
+    }
+
+    .nature {
+        clear: both;
+    }
+
+    .gaming {
+        margin: 30% auto 10% auto;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    .rotatedBorder, .rotatedBorderNature {
+        display: none;
+        width: 180%;
+    }
+    .photo-with-border {
+        width: 80%!important;
+        display: block;
+        margin: auto;
+    }
+    .photo-with-border img {
+        width:100%;
+    }
+
+    .programming > div, .gaming > div, .nature > div {
+        padding: 0;
+    }
+}
+
+    @media screen and (max-width: 768px) {
+        .programming > .photo-with-border, .gaming > .photo-with-border, .nature > .photo-with-border {
+            width: 100%!important;
+            padding: 0;
+        }
+
+        .traveling .photo-with-border {
+            display: block;
+            width: 50%;
+        }
+
+        .traveling {
+            margin-bottom: 5em;
+        }
+    }
